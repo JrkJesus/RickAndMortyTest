@@ -36,7 +36,6 @@ const FavoriteIcon = ({ favorite, onClick }) => {
       <Icon
         style={{
           color: fillColor,
-          // stroke: currFavorite.fillColor,
           fill: "currentColor",
         }}
       />
