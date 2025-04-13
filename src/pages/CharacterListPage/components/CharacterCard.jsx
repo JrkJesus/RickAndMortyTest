@@ -6,21 +6,26 @@ import {
   Grid,
   Image,
   Container,
+  ActionIcon,
 } from "@mantine/core";
 import React from "react";
 import ResponsiveImage from "../../../commons/components/ResponsiveImage/ResponsiveImage";
 import HorizontalCard from "../../../commons/components/HorizontalCard/HorizontalCard";
+import { MdOutlineFavoriteBorder, MdStar, MdStarBorder } from "react-icons/md";
+import { FAVORITES_STATES } from "../../../commons/constants/character";
+import FavoriteIcon from "./FavoriteIcon";
 
 const CharacterCard = ({ character }) => {
   return (
     <HorizontalCard>
+      <FavoriteIcon favorite={character.favorite} slot="leftIcon" />
       <Badge
         slot="badge"
-        color="green"
+        color="#e8f3d8"
         variant="filled"
         style={{ textTransform: "uppercase", padding: "12px" }}
       >
-        <Text size="sm" fw={500}>
+        <Text size="sm" fw={500} c="#598029">
           {character.status}
         </Text>
       </Badge>

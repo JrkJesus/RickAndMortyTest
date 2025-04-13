@@ -1,0 +1,5 @@
+export const FAVORITES_STATES = Object.freeze({
+  NOT_FAVORITE: "NOT_FAVORITE",
+  FAVORITE: "FAVORITE",
+  DISABLED: "DISABLED",
+});
