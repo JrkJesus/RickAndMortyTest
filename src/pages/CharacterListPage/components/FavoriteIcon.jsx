@@ -8,7 +8,7 @@ const FavoriteIcon = ({ favorite, onClick }) => {
     [FAVORITES_STATES.NOT_FAVORITE]: {
       bgColor: "#fafbfb",
       fillColor: "#818d75",
-      icon: MdStar,
+      Icon: MdStar,
     },
     [FAVORITES_STATES.FAVORITE]: {
       bgColor: "#b7db8a",
@@ -21,9 +21,8 @@ const FavoriteIcon = ({ favorite, onClick }) => {
       icon: MdStar,
     },
   };
-  const currFavorite =
+  const { bgColor, fillColor, Icon } =
     favProps[favorite] || favProps[FAVORITES_STATES.NOT_FAVORITE];
-  const Icon = currFavorite.icon;
 
   return (
     <ActionIcon
@@ -31,12 +30,12 @@ const FavoriteIcon = ({ favorite, onClick }) => {
       radius="xl"
       variant="filled"
       autoContrast={false}
-      color={currFavorite.bgColor}
+      color={bgColor}
       onClick={onClick}
     >
       <Icon
         style={{
-          color: currFavorite.fillColor,
+          color: fillColor,
           // stroke: currFavorite.fillColor,
           fill: "currentColor",
         }}

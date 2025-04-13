@@ -3,3 +3,9 @@ export const FAVORITES_STATES = Object.freeze({
   FAVORITE: "FAVORITE",
   DISABLED: "DISABLED",
 });
+
+export const STATUS = Object.freeze({
+  ALIVE: "ALIVE",
+  DEAD: "DEAD",
+  UNKNOWN: "UNKNOWN",
+});

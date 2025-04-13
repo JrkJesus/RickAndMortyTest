@@ -1,6 +1,6 @@
 import React from "react";
 import CharacterCard from "./components/CharacterCard";
-import characters from "../../mocks/myCharacter.json";
+import characters from "../../_mocks_/myCharacter.json";
 import BaseLayout from "../../layouts/BaseLayout";
 
 const CharacterListPage = () => {
