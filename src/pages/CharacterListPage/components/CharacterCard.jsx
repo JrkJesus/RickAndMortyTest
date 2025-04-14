@@ -49,7 +49,7 @@ const CharacterCard = ({ character }) => {
           <Text size="sm" c="dimmed" fw={700}>
             First seen in:
           </Text>
-          <Text size="sm">{character.firstSeen}</Text>
+          <Text size="sm">{character.firstEpisode}</Text>
         </Grid.Col>
       </Grid>
     </HorizontalCard>
